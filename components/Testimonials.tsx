@@ -3,35 +3,35 @@ const testimonials = [
     name: 'James R.',
     role: 'Smoked for 12 years, quit in 2024',
     avatar: '👨‍💼',
-    text: 'I tried quitting four times before iQuit. The health timeline was what got me — seeing my lungs actually recovering in real time made it feel real, not just abstract. Day 90 today and I have never felt better.',
+    text: 'I was skeptical of the "no willpower" thing — sounded like a gimmick. But after chapter four I realized I was already thinking about cigarettes differently. By chapter eight I had quit without even setting a quit date. Day 120 today.',
     stars: 5,
   },
   {
     name: 'Sarah M.',
     role: 'Former pack-a-day smoker',
     avatar: '👩‍💻',
-    text: 'The craving crusher tool is insane. When I got the urge at 11 PM, I would open iQuit and do the breathing exercise. It sounds simple but it actually works. Six months smoke-free now. The money I have saved paid for a vacation.',
+    text: 'The AI coach got me through some rough evenings. I could just type "I really want a cigarette right now" at midnight and get a real response about what I was feeling. No judgment, no generic tips — it actually understood where I was in the program.',
     stars: 5,
   },
   {
     name: 'David K.',
     role: 'Quit after 20+ years',
     avatar: '👨‍🔬',
-    text: 'As someone who has smoked since college, I was skeptical. But watching $1,200 accumulate in my "savings" tracker over three months made quitting feel like gaining something, not losing something. That mindset shift is everything.',
+    text: 'Every other app made me fight my cravings. iQuit made me understand them. There is a huge difference. Once you see that the cigarette was never actually giving you anything, the whole trap collapses. I have not smoked in seven months.',
     stars: 5,
   },
 ];
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-white">
+    <section id="stories" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Real people. Real results.
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Thousands of people have used iQuit to quit for good. Here are a few of their stories.
+            People who quit not by fighting cigarettes — but by understanding them.
           </p>
         </div>
 

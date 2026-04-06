@@ -20,7 +20,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 rounded-full px-4 py-2 text-sm font-medium mb-8">
           <span className="w-2 h-2 bg-emerald-300 rounded-full animate-pulse" />
-          Science-backed quit smoking support
+          The Allen Carr method, now on your phone
         </div>
 
         {/* Main heading */}
@@ -31,8 +31,8 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-teal-100 max-w-2xl mx-auto mb-10 leading-relaxed">
-          iQuit tracks your health recovery in real time, fights cravings when they hit, and
-          keeps you motivated every smoke-free hour.
+          iQuit guides you through the Allen Carr method — a proven approach that removes the
+          desire to smoke entirely. No willpower required. No cravings to fight.
         </p>
 
         {/* CTA Buttons */}
@@ -53,23 +53,17 @@ export default function Hero() {
                 </div>
               </div>
               <div className="bg-white/5 rounded-2xl p-4 mb-3">
-                <p className="text-teal-100 text-xs font-medium mb-2">Health recovery</p>
+                <p className="text-teal-100 text-xs font-medium mb-2">Program progress</p>
                 <div className="space-y-2">
-                  <div>
-                    <div className="flex justify-between text-xs text-teal-200 mb-1">
-                      <span>Lung capacity</span><span>+14%</span>
+                  {['Chapter 1', 'Chapter 2', 'Chapter 3'].map((ch, i) => (
+                    <div key={i} className="flex items-center justify-between text-xs">
+                      <span className="text-teal-200">{ch}</span>
+                      <span className="text-emerald-300 font-semibold">✓ Complete</span>
                     </div>
-                    <div className="h-1.5 bg-white/10 rounded-full">
-                      <div className="h-1.5 bg-emerald-400 rounded-full" style={{ width: '62%' }} />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-xs text-teal-200 mb-1">
-                      <span>Blood oxygen</span><span>Normal</span>
-                    </div>
-                    <div className="h-1.5 bg-white/10 rounded-full">
-                      <div className="h-1.5 bg-emerald-400 rounded-full" style={{ width: '88%' }} />
-                    </div>
+                  ))}
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-teal-200">Chapter 4</span>
+                    <span className="text-white/50">In progress</span>
                   </div>
                 </div>
               </div>

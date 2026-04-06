@@ -1,35 +1,35 @@
 const features = [
   {
-    icon: '📊',
-    title: 'Real-Time Health Recovery',
+    icon: '📖',
+    title: 'The Allen Carr Method',
     description:
-      'Watch your body heal hour by hour. Track lung capacity, blood pressure, circulation, and dozens of health milestones as your body bounces back from smoking.',
+      'Ten chapters that dismantle every false belief keeping you hooked. No willpower battles, no white-knuckling. You simply read, understand, and the desire to smoke fades — for good.',
     bg: 'bg-teal-50',
     iconBg: 'bg-teal-100',
   },
   {
-    icon: '💪',
-    title: 'Craving Crusher',
+    icon: '🤖',
+    title: 'AI Coach, 24/7',
     description:
-      'When the urge hits, iQuit is ready. Breathing exercises, NRT reminders, distraction techniques, and motivational boosts to get you through the tough moments.',
+      'Powered by Claude, your AI coach is ready whenever a craving hits or doubt creeps in. Ask anything — about the method, your progress, or what to do right now. It knows where you are.',
     bg: 'bg-emerald-50',
     iconBg: 'bg-emerald-100',
   },
   {
-    icon: '💰',
-    title: 'Money & Time Saved',
+    icon: '📊',
+    title: 'Progress You Can See',
     description:
-      'See exactly how much cash you are saving, cigarettes you have avoided, and life you have gained back. Every hour smoke-free adds up to real, measurable progress.',
+      'Real-time health milestones, money saved, cigarettes avoided, and a daily streak. Watch your body heal hour by hour — and your savings grow every day you stay smoke-free.',
     bg: 'bg-cyan-50',
     iconBg: 'bg-cyan-100',
   },
 ];
 
 const stats = [
-  { value: '10k+', label: 'Smokers quit' },
-  { value: '$2.4M', label: 'Saved by users' },
+  { value: '10', label: 'Chapters in the program' },
+  { value: '11', label: 'Health milestones tracked' },
   { value: '4.8★', label: 'App Store rating' },
-  { value: '94%', label: 'Craving reduction' },
+  { value: '1×', label: 'Pay once, free forever' },
 ];
 
 export default function Features() {
@@ -38,11 +38,10 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Everything you need to quit smoking
+            A different kind of quit app
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            Powerful, science-backed tools that go beyond willpower — because quitting is a
-            journey, not a single decision.
+            Most quit apps help you fight cravings. iQuit helps you stop wanting cigarettes in the first place.
           </p>
         </div>
 
