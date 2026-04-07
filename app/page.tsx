@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
+import WhyItWorks from '@/components/WhyItWorks';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import BlogCard from '@/components/BlogCard';
@@ -9,16 +10,25 @@ import { getAllPosts } from '@/lib/blog';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'iQuit — Stop Smoking for Good',
+  title: 'iQuit — Quit Smoking Without Willpower | Allen Carr Method App',
   description:
-    'iQuit helps you quit smoking with science-backed methods, real-time health tracking, and personalized craving support. Download free for iOS and Android.',
+    'Stop smoking without fighting cravings. iQuit uses the Allen Carr method to remove your desire to smoke entirely — not suppress it. No patches, no gum, no willpower. Free on iOS & Android.',
   alternates: {
     canonical: 'https://iquitapp.com',
   },
+  keywords: [
+    'quit smoking app',
+    'stop smoking without willpower',
+    'Allen Carr method app',
+    'stop smoking app',
+    'no cravings quit smoking',
+    'easy way to stop smoking',
+    'quit smoking iphone android',
+  ],
   openGraph: {
-    title: 'iQuit — Stop Smoking for Good',
+    title: 'iQuit — Quit Smoking Without Willpower',
     description:
-      'iQuit helps you quit smoking with real-time health tracking, craving tools, and personalized coaching.',
+      'Stop fighting cigarettes. The Allen Carr method removes the desire to smoke entirely. 10 guided chapters, AI coach, health tracking. Free to download.',
     url: 'https://iquitapp.com',
     type: 'website',
   },
@@ -52,6 +62,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
       <Hero />
+      <WhyItWorks />
       <Features />
       <HowItWorks />
       <Testimonials />
@@ -96,12 +107,17 @@ export default function HomePage() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400 rounded-full filter blur-3xl opacity-15" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-block bg-white/10 border border-white/20 text-white/80 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
+            Join 1,200+ people who quit for good
+          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Your last cigarette can be behind you.
+            Stop fighting.<br />Start understanding.
           </h2>
-          <p className="text-xl text-teal-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Join thousands who have already taken back their health, their money, and their freedom
-            with iQuit.
+          <p className="text-xl text-teal-100 mb-4 max-w-2xl mx-auto leading-relaxed">
+            Every previous attempt taught you that quitting is hard. iQuit will show you it doesn&apos;t have to be.
+          </p>
+          <p className="text-teal-300 font-semibold mb-10">
+            No patches. No gum. No willpower battles.
           </p>
           <div className="flex flex-col items-center gap-4">
             <AppStoreButtons />
